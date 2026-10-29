@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Application CANAL+/MES RECRUTEMENTS</title>
+</head>
+<body>
+    <div class="globalPage">
+        <div class="main">
+            <h1>APPLICATION DE GESTION DU FLUX CANAL+</h1>
+            <h2>LUMIERE</h2>
+            <hr>
+            <h3>MES RECRUTEMENTS</h3>
+            <table>
+                <tr>
+                    <th> n° Decodeur</th>
+                    <th> N° Telephone</th>
+                    <th> Nom du client</th>
+                    <th> Formule</th>
+                    <th>Date de recrutement</th>
+                    <th> Ville</th>
+                    <th> Quartier</th>
+                    <th> Installation prise en compte</th>
+                </tr>
+            </table>
+            <button> +</button><span>Enregistrer un nouveau client</span>
+            <button> -</button><span>Supprimer un  client</span>
+            <button> *</button><span>Mettre à jour les infos d'un client</span>
+
+            <form class="formRecrutement" id="formRecrutement">
+                <p>Enregistrer un nouveau client:</p>
+                <div>
+                    <label for="numero" > Numéro de décodeur</label>
+                    <input type="number" id="numDecodeur" nom="numero de Decodeur"/>
+                </div>
+                <div>
+                    <label for="numero" > Numéro de téléphone</label>
+                    <input type="number" id="numTelephone" nom="numero de Telephone"/>
+                </div>
+                <div>
+                    <label for="nom" > Nom du client</label>
+                    <input type="text" id="nomClient" nom="nom du client"/>
+                </div>
+                <div>
+                    <label for="nom" > Formule payée</label>
+                    <input type="text" id="formule" nom="formule payée"/>
+                </div>
+                <div>
+                    <label for="nom" > Date</label>
+                    <input type="date" id="dateRecrutement" nom="date"/>
+                </div>
+                <div>
+                    <label for="nom" > Ville</label>
+                    <input type="text" id="villeClient" nom="ville du client"/>
+                </div>
+                <div>
+                    <label for="nom" > Quartier</label>
+                    <input type="text" id="quartierClient" nom="quartier du client"/>
+                </div>
+                <div>
+                    <input type="radio" id="choixTechnicien" nom="Installation" value="valeur1" checked>
+                    <label for="option1" > Installation prise en compte par CANAL+</label>
+                </div>
+                <div>
+                    <input type="radio" id="choixNonTechnicien" nom="Installation" value="valeur2" >
+                    <label for="option2" > Installation prise en compte par le client</label>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <footer> Coorporated by <a href="">LUMIERE</a></footer>
+    </div>
+    
+</body>
+</html>
