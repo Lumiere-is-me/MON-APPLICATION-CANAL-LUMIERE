@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application LUMIERE CANAL+ / MES CLIENTS</title>
+     <link href="../CSS/style.css" rel="stylesheet">
 </head>
 <body>
     <div class =global_page >
-        <div class = "main">
+        <div class = "principal">
             <h1> APPLICATION DE GESTION DU FLUX CANAL+ </h1>
             <h2> ETS LUMIERE</h2>
             <hr>
+            <button class="btn-option"><a href="mes clients.html"> Mes clients</a></button>
+            <button class="btn-option">Mes ventes</button>
+            <button class="btn-option">Mes recrutements</button>
             <h3> LISTE DES CLIENTS</h3>
 
              <table>
@@ -47,9 +51,7 @@
              </table>
             <button>+</button><span>Ajouter un client</span>
             <button>/=/ </button><span>Modifier les infos d'un client</span>
-            <form>
-                
-            </form id="formClient" class="formulaireCaché">
+            <form id="formClient" class="formulaireCaché">
                 <div>
                     <label for="Numero">Numéro de décodeur:</label>
                     <input type="number" name="Taper un nombre" id="numDecodeur"/>
@@ -82,6 +84,7 @@
                     <label for="Nom">Message d'alerte:</label>
                     <input type="text" name="Taper un nom" id="messageAlerte"/>
                 </div> <br><br>
+             </form >
         </div>
         <hr>
         <p>Coorporated by <a href="">LUMIERE</a></p>

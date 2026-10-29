@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application LUMIERE CANAL+</title>
+    <link href="../CSS/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class =global_page >
-        <div class = "main">
-             <h1> APPLICATION DE GESTION DU FLUX CANAL+ </h1>
-             <h2> ETS LUMIERE</h2>
-             <img src="">
-             <button class="btn-option"><a href="mes clients.html"> Mes clients</a></button>
-             <button class="btn-option">Mes ventes</button>
-             <button class="btn-option">Mes recrutements</button>
-             
-        </div>
-        <hr>
-        <p>Coorporated by <a href="">LUMIERE</a></p>
+    <div class="globalPage">
+            <div class="main">
+                    <h1> APPLICATION DE GESTION DU FLUX CANAL+ </h1>
+                    <h2> ETS LUMIERE</h2>
+                    <hr>
+                    <h3>Connexion</h3>
+                    <p> Connectez-vous avec vos identifiants et accédez à votre application en toute sécurité</p>
+                    <form id="formConnexion" class="formulaireConnexion">
+                        <div class="parametreIdentifiant">
+                            <label for="numero">Numéro de téléphone ou adresse mail</label><br>
+                            <input type="text" name="identifiant" id="identifiant" placeholder="Numéro de téléphone ou adresse mail" required/>
+                        </div><br>
+                        <div class="parametreIdentifiant">
+                            <label for="mot de passe">Mot de Passe</label><br>
+                            <input type="password" name="mot de passe" id="motDePasse"/>
+                        </div><br>
+                        <button type="submit" id="buttonSubmit"> Connexion </button>
+
+                    </form>
+                    <img src="">
+                 <p>Coorporated by @<a href="">Lumiere</a></p> 
+                
+            </div>
+            
+            </div>
+        
+       
     </div>
     
 </body>
