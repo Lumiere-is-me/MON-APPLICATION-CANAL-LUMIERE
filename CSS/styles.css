@@ -1,0 +1,55 @@
+
+header{
+    text-align: center;
+    color: rgb(212, 118, 3);
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(212, 118, 3) ;
+    
+}
+h1{
+   padding-top: 20px;
+}
+h2{
+    color: black;
+}
+.principal{
+    background-color: aquamarine;
+}
+nav{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    
+}
+.btn-option{
+    background-color:rgb(212, 118, 3) ;
+    color: white;
+    height: 28px;
+    width: 25%;
+}
+.btn-option:hover{
+     background-color: white;
+    color: rgb(212, 118, 3);
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th{
+    background-color:rgb(225, 196, 161) ;
+}
+tbody tr:nth-child(even){
+    background-color: #e8e8e8;
+}

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application LUMIERE CANAL+ / MES CLIENTS</title>
-     <link href="../CSS/style.css" rel="stylesheet">
+     <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class =global_page >
-        <div class = "principal">
+        <header>
             <h1> APPLICATION DE GESTION DU FLUX CANAL+ </h1>
             <h2> ETS LUMIERE</h2>
-            <hr>
-            <button class="btn-option"><a href="mes clients.html"> Mes clients</a></button>
-            <button class="btn-option">Mes ventes</button>
-            <button class="btn-option">Mes recrutements</button>
+        </header>
+        <nav>
+                <button class="btn-option"> Mes clients</button>
+                <button class="btn-option">Mes ventes</button>
+                <button class="btn-option">Mes recrutements</button>
+        </nav>
+        <main>
             <h3> LISTE DES CLIENTS</h3>
 
-             <table>
+            <table>
+                <thead>
                 <tr>
                     <th>N° Decodeur</th>
                     <th>N° Telephone</th>
@@ -28,26 +32,29 @@
                     <th>Nombre de jours restants</th>
                     <th>Message d'alerte</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
                 </tr>
+                </tbody>
              </table>
             <button>+</button><span>Ajouter un client</span>
             <button>/=/ </button><span>Modifier les infos d'un client</span>
@@ -85,9 +92,11 @@
                     <input type="text" name="Taper un nom" id="messageAlerte"/>
                 </div> <br><br>
              </form >
-        </div>
+        </main>
+        <footer>
         <hr>
         <p>Coorporated by <a href="">LUMIERE</a></p>
+        </footer>
     </div>
     
     
