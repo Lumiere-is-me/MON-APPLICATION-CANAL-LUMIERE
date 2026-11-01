@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application LUMIERE CANAL+ / MES CLIENTS</title>
-     <link href="../CSS/styles.css" rel="stylesheet">
+    
+    <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class =global_page >
@@ -19,10 +20,18 @@
         </nav>
         <main>
             <h3> LISTE DES CLIENTS</h3>
-
+            <!-- cacher à cocher invisible  qui sert d'interrupteur -->
+            <input type="checkbox" id="toogle-form" class="form-trigger">
+            <div class="infos-clt">
+                <button>+</button><span>Enregistrer un nouveau client</span>
+                <button>*</button><span>Modifier les infos d'un client</span>
+                <!-- bouton sur lequel l'utilisateur va cliquer-->
+                <label for ="toogle-form" class="btn-toogle"> Afficher le formulaire</label>
+            </div><br>
             <table>
                 <thead>
                 <tr>
+                    <th> N°</th>
                     <th>N° Decodeur</th>
                     <th>N° Telephone</th>
                     <th>Nom client</th>
@@ -35,6 +44,7 @@
                 </thead>
                 <tbody>
                 <tr>
+                    <td>1</td>
                     <td>a</td>
                     <td>b</td>
                     <td>c</td>
@@ -45,6 +55,29 @@
                     <td>h</td>
                 </tr>
                 <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                 <tr>
+                    <td>4</td>
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
@@ -56,42 +89,27 @@
                 </tr>
                 </tbody>
              </table>
-            <button>+</button><span>Ajouter un client</span>
-            <button>/=/ </button><span>Modifier les infos d'un client</span>
+            <br>
             <form id="formClient" class="formulaireCaché">
+                <p>Veuillez entrer les informations client</p>
                 <div>
-                    <label for="Numero">Numéro de décodeur:</label>
+                    <label for="Numero">Numéro de décodeur:</label><br>
                     <input type="number" name="Taper un nombre" id="numDecodeur"/>
                 </div> <br><br>
                 <div>
-                    <label for="Numero">Numéro de téléphone:</label>
+                    <label for="Numero">Numéro de téléphone:</label><br>
                     <input type="number" name="Taper un nombre" id="numTelephone"/>
                 </div> <br><br>
                 <div>
-                    <label for="Nom">Nom du client:</label>
+                    <label for="Nom">Nom du client:</label><br>
                     <input type="text" name="Taper un nom" id="nomClient"/>
                 </div> <br><br>
                 <div>
-                    <label for="Nom">Dernière formule:</label>
+                    <label for="Nom">Dernière formule:</label><br>
                     <input type="text" name="Taper un nom" id="nomClient"/>
                 </div> <br><br>
-                <div>
-                    <label for="Nombre">Date de début:</label>
-                    <input type="number" name="Taper une date" id="dateDebut"/>
-                </div> <br><br>
-                <div>
-                    <label for="Nombre">Date de fin:</label>
-                    <input type="number" name="Taper une date" id="dateFin"/>
-                </div> <br><br>
-                <div>
-                    <label for="Nombre">Nombre de jours restants:</label>
-                    <input type="number" name="Taper une date" id="joursRestants"/>                                     
-                </div> <br><br>
-                <div>
-                    <label for="Nom">Message d'alerte:</label>
-                    <input type="text" name="Taper un nom" id="messageAlerte"/>
-                </div> <br><br>
-             </form >
+                <button class="btn-enregistrer">Enregistrer</button>
+            </form >
         </main>
         <footer>
         <hr>

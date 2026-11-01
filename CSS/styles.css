@@ -53,3 +53,48 @@ th{
 tbody tr:nth-child(even){
     background-color: #e8e8e8;
 }
+form p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*on cache complètement la vraie case à cocher */
+.form-trigger {
+    display: none;
+}
+.formulaireCaché{
+    display: none;
+    border: 1px solid #ccc;
+    max-width: 390px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: rgb(249, 244, 238);
+   
+}
+ /*quand la case est cochée, affiche le formulaire suivant */
+ .form-trigger:checked ~ .formulaireCaché{
+    display: block;
+ }
+.btn-enregistrer{
+    margin-left: auto;
+    display: flex;
+    background-color: rgb(212, 118, 3);
+    color: white;
+    width: 90px;
+    height: 25px;
+ }
+input{
+    width: 90%;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+ }
+form label{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    
+ }
