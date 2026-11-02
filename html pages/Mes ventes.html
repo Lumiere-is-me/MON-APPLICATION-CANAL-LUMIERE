@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Application CANAL+/MES VENTES</title>
+    <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="globalPage">
-        <div class="main">
+        <header>
             <h1>APPLICATION DE GESTION DU FLUX CANAL+</h1>
             <h2>LUMIERE</h2>
-            <hr>
-            <h3>MES VENTES</h3>
-            <table>
-                <tr>
-                    <th> CA REABONNEMENTS</th>
-                    <th> CA RECRUTEMENTS</th>
-                    <th> MES COMMISSIONS</th>
-                    <th> MOIS</th>
-                    <th> ANNEE</th>
-                </tr>
+        </header>
+        <nav>
+            <button class="btn-option"> Mes clients</button>
+            <button class="btn-option">Mes ventes</button>
+            <button class="btn-option">Mes recrutements</button>
+        </nav>
+        <main>
+            <h3> MES VENTES</h3>
+            <!-- cacher à cocher invisible  qui sert d'interrupteur -->
+            <input type="checkbox" id="toogle-form" class="form-trigger">
+            <div class="infos-clt">
+                <button>+</button><span>Enregistrer un nouveau client</span>
+                <button>*</button><span>Modifier les infos d'un client</span>
+                <!-- bouton sur lequel l'utilisateur va cliquer-->
+                <label for ="toogle-form" class="btn-toogle"> Afficher le formulaire</label>
+            </div><br>
+            <table style="width: 65%;">
+                <thead>
+                    <tr>
+                        <th> CA REABONNEMENTS</th>
+                        <th> CA RECRUTEMENTS</th>
+                        <th> MES COMMISSIONS</th>
+                        <th> MOIS</th>
+                        <th> ANNEE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1505000</td>
+                        <td>120000</td>
+                         <td>105000</td>
+                        <td>Novembre</td>
+                        <td>2026</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
