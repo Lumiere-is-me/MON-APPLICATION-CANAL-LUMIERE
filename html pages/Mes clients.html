@@ -94,7 +94,7 @@
                 <p>Veuillez entrer les informations client</p>
                 <div>
                     <label for="Numero">Numéro de décodeur:</label><br>
-                    <input type="number" name="Taper un nombre" id="numDecodeur"/>
+                    <input type="number" name="Taper un nombre" id="numDecodeur"   placeholder="ex: 23800..."/>
                 </div> <br><br>
                 <div>
                     <label for="Numero">Numéro de téléphone:</label><br>
@@ -105,9 +105,30 @@
                     <input type="text" name="Taper un nom" id="nomClient"/>
                 </div> <br><br>
                 <div>
-                    <label for="Nom">Dernière formule:</label><br>
-                    <input type="text" name="Taper un nom" id="nomClient"/>
+                    <label for="text">Prénom du client:</label><br>
+                    <input type="text" name="Taper un nom" id="prenomClient"/>
                 </div> <br><br>
+                <div>
+                    <label for="date">Date de début</label><br>
+                    <input type="date" name="date de debut" id="dateDeDebut"/>
+                </div><br><br>
+                <div>
+                    <label for="date">Date de fin</label><br>
+                    <input type="date" name="date de debut" id="dateDeFin"/>
+                </div><br><br>
+                <div>
+                    <label for="formule">Dernière formule:</label><br>
+                    <select id="formule" name="formuleReabo">
+                        <option value="">--Choisissez une formule --</option>
+                        <option value="access">Access-5000</option>
+                        <option value="Evasion">Evasion-10500</option>
+                        <option value="access">Access+-15000</option>
+                        <option value="toutcanal">Tout canal-28000</option>
+                </div><br><br>
+                <div>
+                    <label for="nombreJours">Nombre de jours restants</label>
+                    <input type="number" name="nbre de jours restants" id="joursRestants">
+                </div><br><br>
                 <button class="btn-enregistrer">Enregistrer</button>
             </form >
         </main>
@@ -117,6 +138,6 @@
         </footer>
     </div>
     
-    
+<script src = "../SCRIPTS JS/scriptJs.js" defer></script>
 </body>
 </html>
