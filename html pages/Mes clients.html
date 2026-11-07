@@ -32,89 +32,48 @@
                 <thead>
                 <tr>
                     <th> N°</th>
-                    <th>N° Decodeur</th>
-                    <th>N° Telephone</th>
-                    <th>Nom client</th>
+                    <th>Decodeur</th>
+                    <th>Telephone</th>
+                    <th>Nom </th>
+                    <th>Prenom </th>
                     <th>Formule</th>
-                    <th>Date de début</th>
-                    <th>Date de fin</th>
-                    <th>Nombre de jours restants</th>
-                    <th>Message d'alerte</th>
+                    <th>Date_de_debut</th>
+                    <th>Date_de_fin</th>
+                    <th>Nombre_de_jours_restants</th>
+                    <th>Formule</th>
+                    <th>Message_alerte</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
-                    <td>d</td>
-                    <td>e</td>
-                    <td>f</td>
-                    <td>g</td>
-                    <td>h</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                </tr>
-                 <tr>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                </tr>
-                 <tr>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                </tr>
+                <tbody id="body-table">
+                
                 </tbody>
              </table>
             <br>
-            <form id="formClient" class="formulaireCaché">
+            <form  id="formulaireClient" class="formulaireCaché">
                 <p>Veuillez entrer les informations client</p>
                 <div>
-                    <label for="Numero">Numéro de décodeur:</label><br>
-                    <input type="number" name="Taper un nombre" id="numDecodeur"   placeholder="ex: 23800..."/>
+                    <label for="numero">Numéro de décodeur:</label><br>
+                    <input type="number" name="decodeur" id="numDecodeur"   placeholder="ex: 23800..." required>
                 </div> <br><br>
                 <div>
-                    <label for="Numero">Numéro de téléphone:</label><br>
-                    <input type="number" name="Taper un nombre" id="numTelephone"/>
+                    <label for="numero">Numéro de téléphone:</label><br>
+                    <input type="number" name="telephone" id="numTelephone"required>
                 </div> <br><br>
                 <div>
-                    <label for="Nom">Nom du client:</label><br>
-                    <input type="text" name="Taper un nom" id="nomClient"/>
+                    <label for="nom">Nom du client:</label><br>
+                    <input type="text" name="nom" id="nomClient" required>
                 </div> <br><br>
                 <div>
                     <label for="text">Prénom du client:</label><br>
-                    <input type="text" name="Taper un nom" id="prenomClient"/>
+                    <input type="text" name="prenom" id="prenomClient"/>
                 </div> <br><br>
                 <div>
                     <label for="date">Date de début</label><br>
-                    <input type="date" name="date de debut" id="dateDeDebut"/>
+                    <input type="date" name="datedebut" id="dateDeDebut" required>
                 </div><br><br>
                 <div>
                     <label for="date">Date de fin</label><br>
-                    <input type="date" name="date de debut" id="dateDeFin"/>
+                    <input type="date" name="datefin" id="dateDeFin" required>
                 </div><br><br>
                 <div>
                     <label for="formule">Dernière formule:</label><br>
@@ -127,9 +86,14 @@
                 </div><br><br>
                 <div>
                     <label for="nombreJours">Nombre de jours restants</label>
-                    <input type="number" name="nbre de jours restants" id="joursRestants">
+                    <input type="number" name="nombreJours" id="nbreJoursRestants" required>
                 </div><br><br>
-                <button class="btn-enregistrer">Enregistrer</button>
+                 <div>
+                    <label for="message">Message d'alerte</label>
+                    <textarea id="alert-msg" name="message" rows="5" cols="20" placeholder="Quelle est la situation actuelle du client"></textarea>
+                </div><br><br>
+
+                <input type="submit" id="btn-enregistrer">
             </form >
         </main>
         <footer>

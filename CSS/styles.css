@@ -75,7 +75,7 @@ form p{
  .form-trigger:checked ~ .formulaireCaché{
     display: block;
  }
-.btn-enregistrer{
+#btn-enregistrer{
     margin-left: auto;
     display: flex;
     background-color: rgb(212, 118, 3);
