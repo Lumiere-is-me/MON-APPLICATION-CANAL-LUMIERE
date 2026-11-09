@@ -62,7 +62,7 @@ form p{
     display: none;
 }
 .formulaireCaché{
-    display: none;
+    /*display: none;*/
     border: 1px solid #ccc;
     max-width: 390px;
     margin-top: 15px;
@@ -72,9 +72,9 @@ form p{
     background-color: rgb(249, 244, 238);   
 }
  /*quand la case est cochée, affiche le formulaire suivant */
- .form-trigger:checked ~ .formulaireCaché{
+/*.form-trigger:checked ~ .formulaireCaché{
     display: block;
- }
+ }*/
 #btn-enregistrer{
     margin-left: auto;
     display: flex;
@@ -97,3 +97,25 @@ form label{
     font-weight: bold;
     
  }
+.infos-clt{
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+#btn-save{
+    background-color: rgb(212, 118, 3);
+    color:black;
+    height: 35px;
+    font-size: 1.2em;
+    border: 0;
+    
+}
+#btn-update{
+    background-color: rgb(212, 118, 3);
+    color:black;
+    height: 35px;
+    font-size: 1.2em;
+    border: 0;
+}

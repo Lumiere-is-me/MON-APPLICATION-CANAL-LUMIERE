@@ -20,36 +20,16 @@
         </nav>
         <main>
             <h3> LISTE DES CLIENTS</h3>
-            <!-- cacher à cocher invisible  qui sert d'interrupteur -->
-            <input type="checkbox" id="toogle-form" class="form-trigger">
-            <div class="infos-clt">
-                <button>+</button><span>Enregistrer un nouveau client</span>
-                <button>*</button><span>Modifier les infos d'un client</span>
-                <!-- bouton sur lequel l'utilisateur va cliquer-->
+               <!-- bouton sur lequel l'utilisateur va cliquer-->
                 <label for ="toogle-form" class="btn-toogle"> Afficher le formulaire</label>
+                <!-- case à cocher invisible  qui sert d'interrupteur -->
+                <input type="checkbox" id="toogle-form" class="form-trigger">
+               
+            <div class="infos-clt">
+                <button  id="btn-save">+ Enregistrer un nouveau client</button>
+                <button id="btn-update">* Modifier les infos d'un client</button>
             </div><br>
-            <table>
-                <thead>
-                <tr>
-                    <th> N°</th>
-                    <th>Decodeur</th>
-                    <th>Telephone</th>
-                    <th>Nom </th>
-                    <th>Prenom </th>
-                    <th>Formule</th>
-                    <th>Date_de_debut</th>
-                    <th>Date_de_fin</th>
-                    <th>Nombre_de_jours_restants</th>
-                    <th>Formule</th>
-                    <th>Message_alerte</th>
-                </tr>
-                </thead>
-                <tbody id="body-table">
-                
-                </tbody>
-             </table>
-            <br>
-            <form  id="formulaireClient" class="formulaireCaché">
+            <form  id="formulaireClient" class="formulaireCaché" hidden>
                 <p>Veuillez entrer les informations client</p>
                 <div>
                     <label for="numero">Numéro de décodeur:</label><br>
@@ -95,6 +75,27 @@
 
                 <input type="submit" id="btn-enregistrer">
             </form >
+            <table>
+                <thead>
+                <tr>
+                   
+                    <th>Decodeur</th>
+                    <th>Telephone</th>
+                    <th>Nom </th>
+                    <th>Prenom </th>
+                    <th>Date_de_debut</th>
+                    <th>Date_de_fin</th>
+                    <th>Nombre_de_jours_restants</th>
+                    <th>Formule</th>
+                    <th>Message_alerte</th>
+                </tr>
+                </thead>
+                <tbody id="body-table">
+                
+                </tbody>
+             </table>
+            <br>
+            
         </main>
         <footer>
         <hr>
